@@ -1,12 +1,18 @@
-service: pSeek-api
+service: pseek-api
 
 provider:
   name: aws
-  runtime: nodejs6.10
+  runtime: nodejs10.x
   region: us-west-2
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:*
+      Resource: "*"
       
 functions:
   test:
+    role: arn:aws:iam::606218893881:role/TeamRole
     handler: handlers/index.handler
     events: 
         - http:
