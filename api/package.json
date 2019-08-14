@@ -1,0 +1,16 @@
+{
+  "name": "pSeek-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-offline": "serverless offline --stage dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "serverless-offline": "^5.10.1"
+  }
+}
